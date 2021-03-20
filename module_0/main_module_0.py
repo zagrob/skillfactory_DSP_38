@@ -57,7 +57,7 @@ while True:
             
             # так как загаданное число больше предполагаемого
             # значит в минимальную границу для генератора предполагаемых чисел устанавливаем текущее предполагаемое число 
-            predict_min=predict
+            predict_min = predict
             
             # делал вывод на экран для дебага
             # print (predict_min, predict_max)
@@ -70,7 +70,7 @@ while True:
             
             # так как загаданное число меньше предполагаемого
             # значит в максимальную границу для генератора предполагаемых чисел устанавливаем текущее предполагаемое число 
-            predict_max=predict
+            predict_max = predict
             
             # делал вывод на экран для дебага
             # print (predict_min, predict_max)
@@ -79,16 +79,3 @@ while True:
             predict = random_predict(predict_min, predict_max)
             
 print (f"Вы угадали число {number} за {count} попыток.") 
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
