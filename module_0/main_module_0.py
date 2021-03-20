@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[30]:
-
-
 import numpy as np
 def random_predict(min, max):
     return np.random.randint(min, max)
