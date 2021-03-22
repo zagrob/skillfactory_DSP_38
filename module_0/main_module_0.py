@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[30]:
-
-
 import numpy as np
 def random_predict(min, max):
     return np.random.randint(min, max)
@@ -22,7 +16,7 @@ predict_max = 101
 predict_min = 1
 
 # Это для отлаживания кода было сделано
-print ('Мин=',predict_min,'Макс=', predict_max)
+print ('Мин =',predict_min,'Макс =', predict_max)
 
 # Генерация предполагаемого числа
 predict = random_predict(predict_min, predict_max)      
@@ -57,7 +51,7 @@ while True:
             
             # так как загаданное число больше предполагаемого
             # значит в минимальную границу для генератора предполагаемых чисел устанавливаем текущее предполагаемое число 
-            predict_min=predict
+            predict_min = predict
             
             # делал вывод на экран для дебага
             # print (predict_min, predict_max)
@@ -70,7 +64,7 @@ while True:
             
             # так как загаданное число меньше предполагаемого
             # значит в максимальную границу для генератора предполагаемых чисел устанавливаем текущее предполагаемое число 
-            predict_max=predict
+            predict_max = predict
             
             # делал вывод на экран для дебага
             # print (predict_min, predict_max)
@@ -79,16 +73,3 @@ while True:
             predict = random_predict(predict_min, predict_max)
             
 print (f"Вы угадали число {number} за {count} попыток.") 
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
